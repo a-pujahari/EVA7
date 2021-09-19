@@ -11,7 +11,7 @@ We should always use 3x3 kernels for the following reasons:
 1. Computational efficiency - using a 3x3 will reduce the overall number of parameters (as against using larger kernels)
 2. Support for hardware acceleration for 3x3 kernel convolutions from GPU manufacturers
 3. Easier to keep track of number of parameters and image sizes through multiple layers (with stride of 1 and padding of 0)
-4. 3x3 kernels can help to preserve symmetry
+4. 3x3 kernels can help to preserve symmetry. The center pixel for a kernel of odd size can always be defined. For a 3x3 kernel of all ones, image data will be downsampled (with averaging) without any shift/movement within the image.
 
 ### 3. How many times do we need to perform 3x3 convolutions operations to reach close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...)
 We will need to perform 98 3x3 convolutions to reach a matrix of size 1x1 from 199x199.
