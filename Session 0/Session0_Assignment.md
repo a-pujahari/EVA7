@@ -1,6 +1,6 @@
 # Assignment 0
 
-## Submission by Abhinav Pujahari, Group 9 - Other members include Yuvaraj V and Satwik S Mishra
+## Submission by Abhinav Pujahari from Group 9 - with members include Yuvaraj V and Satwik S Mishra
 
 ### 1. What are Channels & Kernels according to EVA?
 Channels are fundamental building blocks of an image or other data (text etc), that can be used in various combinations to recreate every sample of the data set. I.e straight lines, circles, curves for image data, RGB channels for image data, individual characters or set of words for text data etc.
