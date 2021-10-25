@@ -1,4 +1,10 @@
-# EVA7 - Session 5 - Coding Drill Down Assignment - Submission by Abhinav Pujahari (abhinavpujahari@gmail.com), Group 9
+# EVA7 - Session 5 - Coding Drill Down Assignment 
+
+## Submission by Group 9
+
+Abhinav Pujahari (abhinavpujahari@gmail.com) \
+Satwik Swarup Mishra (satwiksmishra@gmail.com) \
+Yuvaraj Venkataswamy (yuvaraj100493@gmail.com)
 
 Target - Achieve 99.4% testing accuracy consistently by optimizing a model over multiple steps for the MNIST dataset.
 
