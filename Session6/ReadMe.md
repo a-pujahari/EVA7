@@ -1,5 +1,5 @@
 # EVA 7 Session 6 Assignment - Experimentation with Normalizations
-## Submission by Abhinav Pujahari (abhinavpujahari@gmail.com)
+## Submission by Abhinav Pujahari (abhinavpujahari@gmail.com) - No Partners
 
 ## Goals
 1. Write single model.py file that accepts group, batch or layer normalization as parameters.
