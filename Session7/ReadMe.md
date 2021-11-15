@@ -56,11 +56,13 @@ The full model code can be found [here](https://github.com/a-pujahari/EVA7/blob/
 | Conv-3B               | 14  | 24          | 48            | 1       | 3      | 2      | 1        | 14   | 1   | 2    | 5   | 7    |                       |
 | Conv-4B               | 14  | 48          | 48            | 1       | 3      | 1      | 1        | 14   | 2   | 2    | 7   | 11   | Block B Ends          |
 |                       |     |             |               |         |        |        |          |      |     |      |     |      |Outputs of blocks A & B are concatenated |        
-| Conv4 - Depthwise     | 14  | 96          | 96            | 0       | 3      | 1      | 1        | 12   | 2   | 2    | 15  | 19   | Max 'rout' from Blocks A and B is taken |
-| Conv4 - Pointwise     | 12  | 96          | 60            | 0       | 1      | 1      | 1        | 12   | 2   | 2    | 19  | 19   |                       |
+| Conv4 - Depthwise     | 14  | 96          | 96            | 0       | 3      | 1      | 1        | 12   | 2   | 2    | 15  | 19   | Max 'rout' from Blocks A and B is taken as 'rin' post concatenation* |
+| Conv4 - Pointwise     | 12  | 96          | 60            | 0       | 1      | 1      | 1        | 12   | 2   | 2    | 19  | 19   | Conv4 is depthwise separable convolution |
 | Conv5 - Reduction 1   | 12  | 60          | 30            | 0       | 3      | 2      | 1        | 6    | 2   | 4    | 19  | 23   |                       |
-| Conv - Reuction 2     | 10  | 30          | 10            | 0       | 3      | 1      | 1        | 6    | 4   | 4    | 23  | 31   |                       |
+| Conv5 - Reuction 2    | 10  | 30          | 10            | 0       | 3      | 1      | 1        | 6    | 4   | 4    | 23  | 31   |                       |
 | GAP                   | 6   | 10          | 10            | 0       | 6      | 1      | 1        | 1    | 4   | 4    | 31  | 51   |                       |
+
+*Assumption
 
 ## Training & Testing Logs
 
