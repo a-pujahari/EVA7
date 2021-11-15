@@ -82,19 +82,19 @@ class Net(nn.Module):
 
         ## CONVOLUTION BLOCK 5 - Reduction
         self.convblock5 = nn.Sequential(
-            nn.Conv2d(in_channels = 60, out_channels = 30, kernel_size=(3, 3), stride = 1, padding = 0, dilation = 1, bias = False),
+            nn.Conv2d(in_channels = 60, out_channels = 30, kernel_size=(3, 3), stride = 2, padding = 1, dilation = 1, bias = False),
             nn.ReLU(),
             nn.BatchNorm2d(30),
             nn.Dropout(dropout_value),
-            nn.Conv2d(in_channels = 30, out_channels = 10, kernel_size=(3, 3), stride = 1, padding = 0, dilation = 1, bias = False),
+            nn.Conv2d(in_channels = 30, out_channels = 10, kernel_size=(3, 3), stride = 1, padding = 1, dilation = 1, bias = False),
             nn.ReLU(),
             nn.BatchNorm2d(10),
             nn.Dropout(dropout_value)
-        ) # output_size = 8
+        ) # output_size = 6
 
         # Global Average Pooling
         self.gap = nn.Sequential(
-            nn.AvgPool2d(kernel_size = 8) ## Global Average Pooling
+            nn.AvgPool2d(kernel_size = 6) ## Global Average Pooling
         ) # output_size = 1
 
 
