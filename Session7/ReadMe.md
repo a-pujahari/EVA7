@@ -58,9 +58,9 @@ The full model code can be found [here](https://github.com/a-pujahari/EVA7/blob/
 |                       |     |             |               |         |        |        |          |      |     |      |     |      |Outputs of blocks A & B are concatenated |        
 | Conv4 - Depthwise     | 14  | 96          | 96            | 0       | 3      | 1      | 1        | 12   | 2   | 2    | 15  | 19   | Max 'rout' from Blocks A and B is taken |
 | Conv4 - Pointwise     | 12  | 96          | 60            | 0       | 1      | 1      | 1        | 12   | 2   | 2    | 19  | 19   |                       |
-| Conv5 - Reduction 1   | 12  | 60          | 30            | 0       | 3      | 2      | 1        | 10   | 2   | 4    | 19  | 23   |                       |
-| Conv - Reuction 2     | 10  | 30          | 10            | 0       | 3      | 1      | 1        | 8    | 4   | 4    | 23  | 31   |                       |
-| GAP                   | 8   | 10          | 10            | 0       | 8      | 1      | 1        | 1    | 4   | 4    | 31  | 59   |                       |
+| Conv5 - Reduction 1   | 12  | 60          | 30            | 0       | 3      | 2      | 1        | 6    | 2   | 4    | 19  | 23   |                       |
+| Conv - Reuction 2     | 10  | 30          | 10            | 0       | 3      | 1      | 1        | 6    | 4   | 4    | 23  | 31   |                       |
+| GAP                   | 6   | 10          | 10            | 0       | 6      | 1      | 1        | 1    | 4   | 4    | 31  | 51   |                       |
 
 ## Training & Testing Logs
 
