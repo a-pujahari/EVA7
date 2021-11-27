@@ -17,7 +17,7 @@ As required, an additional repo was created with models, utils and main files in
 ## Notebook
 
 The notebook for this assignment can be accessed here (patience=10): [EVA7_AssignmentS8_AdvancedTrainingConcepts](https://github.com/a-pujahari/EVA7/blob/main/Session8/EVA7_AssignmentS8_AdvancedTrainingConcepts.ipynb) \
-And for a second attempt with patience = 2 for LR scheduler ReduceLROnPlateau: [EVA7_AssignmentS8_Patience2]()
+And for a second attempt with patience = 2 for LR scheduler ReduceLROnPlateau: [EVA7_AssignmentS8_Patience2](https://github.com/a-pujahari/EVA7/blob/main/Session8/EVA7_AssignmentS8_Patience2.ipynb)
 
 ## Analysis
 Attempt 1 - Patience value = 10 \
