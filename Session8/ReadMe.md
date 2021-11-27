@@ -16,9 +16,11 @@ As required, an additional repo was created with models, utils and main files in
 
 ## Notebook
 
-The notebook for this assignment can be accessed here: [EVA7_AssignmentS8_AdvancedTrainingConcepts](https://github.com/a-pujahari/EVA7/blob/main/Session8/EVA7_AssignmentS8_AdvancedTrainingConcepts.ipynb)
+The notebook for this assignment can be accessed here (patience=10): [EVA7_AssignmentS8_AdvancedTrainingConcepts](https://github.com/a-pujahari/EVA7/blob/main/Session8/EVA7_AssignmentS8_AdvancedTrainingConcepts.ipynb) \
+And for a second attempt with patience = 2 for LR scheduler ReduceLROnPlateau: [EVA7_AssignmentS8_Patience2]()
 
 ## Analysis
+Attempt 1 - Patience value = 10 \
 Epochs - 40 \
 Best Training Accuracy - 82.46% (39th Epoch) \
 Best Testing Accuracy - 81.33% (40th Epoch) 
@@ -27,20 +29,34 @@ Optimizer - Adam (learning rate = 0.01, weight decay = 1e-5 \
 Scheduler - ReduceLROnPlateau (mode='min', factor=0.1, patience=10, threshold=0.0001, threshold_mode='abs', cooldown=0, min_lr=0, eps=1e-08, verbose=False) \
 Finding - [threshold mode "abs" is necessary for mode = "min" when loss is expected to be negative](https://github.com/pytorch/pytorch/issues/38622)
 
+Attempt 2 - Patience value = 2 \
+Epochs - 40 \
+Best Training Accuracy - 88.23% (39th Epoch) \
+Best Testing Accuracy - 84.79% (40th Epoch) 
+
+Optimizer - Adam (learning rate = 0.01, weight decay = 1e-5 \
+Scheduler - ReduceLROnPlateau (mode='min', factor=0.1, patience=2, threshold=0.0001, threshold_mode='abs', cooldown=0, min_lr=0, eps=1e-08, verbose=False)
+
 ## Loss Curves
+Loss and Accuracy curves for attempt 1 with patience = 10
 ![Loss and Accuracy](https://github.com/a-pujahari/EVA7/blob/main/Session8/Loss%20and%20Accuracy.png)
 
-## Sample Misclassified Images
+Loss and Accuracy curves for attempt 2 with patience = 2
+![Loss and Accuracy 2](https://github.com/a-pujahari/EVA7/blob/main/Session8/Loss%20and%20Accuracy%202.png)
+
+## Sample Misclassified Images (from attempt 1)
 ![Misclassified](https://github.com/a-pujahari/EVA7/blob/main/Session8/misclassified.png)
 
-## GradCam Output (on misclassified images)
+## GradCam Output (on misclassified images from attempt 1)
 ![gradcam1](https://github.com/a-pujahari/EVA7/blob/main/Session8/gradcam1.png)
 ![gradcam2](https://github.com/a-pujahari/EVA7/blob/main/Session8/gradcam2.png)
 
 ## Analysis
-ReduceLROnPlateau is not triggered (the learning rate is not reduced) considering the patience metric is not met (number of epochs with no improvement). Test loss steadily decreases  from the beginning of training and ends up fluctating around 0.004 from epochs 30-40.
+ReduceLROnPlateau is not triggered in the first attempt(the learning rate is not reduced) considering the patience metric is not met (number of epochs with no improvement). Test loss steadily decreases  from the beginning of training and ends up fluctating around 0.004 from epochs 30-40.
 
-## Training Logs
+For attempt 2, learning rate gradually decreases as the patience metric is intermittently triggered during training, reducing learning rate by a factor of 0.1 each time. Eventually, learning rate drops below 1e-5 which plateaus progress and testing accuracy doesn't increase beyond 84.79%.
+
+## Training Logs (for attempt 1)
 EPOCH: 1
   0%|          | 0/391 [00:00<?, ?it/s]/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:481: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   cpuset_checked))
