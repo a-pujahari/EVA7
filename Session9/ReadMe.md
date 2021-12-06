@@ -15,7 +15,7 @@ Additional support/wrapper repo was updated with augmentations required for this
 
 ## Notebook
 
-The notebook for this assignment can be accessed here: [EVA7_Assignment9_AbhinavP](https://github.com/a-pujahari/EVA7/blob/main/Session9/EVA7_Assignment9_AbhinavP.ipynb.ipynb)
+The notebook for this assignment can be accessed here: [EVA7_Assignment9_AbhinavP](https://github.com/a-pujahari/EVA7/blob/main/Session9/EVA7_Assignment9_AbhinavP.ipynb)
 
 ## Analysis
 
