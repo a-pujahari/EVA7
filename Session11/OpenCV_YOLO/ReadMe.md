@@ -8,5 +8,5 @@
 
 ## Annotated Images
 
-![Image1_annotated]()
-![Image2_annotated]()
+![Image1_annotated](https://github.com/a-pujahari/EVA7/blob/main/Session11/OpenCV_YOLO/Image1_annotated.jpg)
+![Image2_annotated](https://github.com/a-pujahari/EVA7/blob/main/Session11/OpenCV_YOLO/Image2_annotated.jpg)
