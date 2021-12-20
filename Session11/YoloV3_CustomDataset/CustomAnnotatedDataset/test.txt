@@ -1,0 +1,6 @@
+./data/customdata/images/vest7.jpg
+./data/customdata/images/hardhat6.jpg
+./data/customdata/images/hardhat8.jpg
+./data/customdata/images/vest12.jpg
+./data/customdata/images/mask15.jpg
+./data/customdata/images/vest8.jpg
