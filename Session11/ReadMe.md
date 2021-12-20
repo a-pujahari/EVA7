@@ -1,4 +1,4 @@
-#EVA7 - Session 11 - YOLO Assignment
+# EVA7 - Session 11 - YOLO Assignment
 
 ## Submission by Abhinav Pujahari (abhinavpujahari@gmail.com)
 
