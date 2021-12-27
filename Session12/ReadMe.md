@@ -1,8 +1,7 @@
-# Spatial Transformer Task
-
 # EVA7 - Session 12 - Dawn of Transformers - Assignment
 ## Submission by Abhinav Pujahari (abhinavpujahari@gmail.com)
 
+# Spatial Transformer Task
 ## Tasks:
 1. Implement Spatial Transformer code for CIFAR10
 2. Train for 50 Epochs, show sample outputs
