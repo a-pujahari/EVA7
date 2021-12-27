@@ -8,6 +8,7 @@
 
 ## Notebooks
 Link to the notebook on github can be found [here](https://github.com/a-pujahari/EVA7/blob/main/Session12/EVA7_Session12_SpatialTransformer.ipynb)
+
 The public notebook on Colab can be found [here](https://colab.research.google.com/drive/1_Ebvu7ZRWKOfOGZpQPQLP1YMdufoO0jy?usp=sharing)
 
 ## Spatial Transformer
