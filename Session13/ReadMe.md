@@ -4,6 +4,23 @@
 ## Goals:
 1. Implement the Vision transformer to discriminate between cats and dogs.
 
+[Blogpost](https://analyticsindiamag.com/hands-on-vision-transformers-with-pytorch/) from Analytics Vidhya is used as guidance to implement the Vision transformer.
+
+## Dataset
+
+Dataset was downloaded from Kaggle, directly into Google Colab after uploading user credentials and accepting competition rules on Kaggle.
+The dataset consists of 25,000 images of dogs and cats, with the numeric label embedded into the filenames: 1 for dog and 0 for cat.
+
+Some sample images:
+![sample_images](https://github.com/a-pujahari/EVA7/blob/main/Session13/Dataset.png)
+
+## Model Implementation
+
+Notebook with the implementation and training can be found [here](https://github.com/a-pujahari/EVA7/blob/main/Session13/EVA7_Session13_ViT.ipynb).
+
+## Model Summary
+Model summary can be found in the [notebook](https://github.com/a-pujahari/EVA7/blob/main/Session13/EVA7_Session13_ViT.ipynb). It was too large to include here.
+
 ## Training Logs
 100%
 313/313 [01:58<00:00, 2.91it/s]
@@ -84,3 +101,7 @@ Epoch : 19 - loss : 0.6038 - acc: 0.6642 - val_loss : 0.6045 - val_acc: 0.6596
 100%
 313/313 [01:57<00:00, 3.08it/s]
 Epoch : 20 - loss : 0.6000 - acc: 0.6692 - val_loss : 0.5998 - val_acc: 0.6715
+
+References:
+1. [Hands on Vision Transformer with PyTorch](https://analyticsindiamag.com/hands-on-vision-transformers-with-pytorch/)
+2. [Loading Kaggle Datasets into Google Colab](https://www.analyticsvidhya.com/blog/2021/06/how-to-load-kaggle-datasets-directly-into-google-colab/)
