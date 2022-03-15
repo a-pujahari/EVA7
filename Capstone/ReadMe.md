@@ -20,7 +20,7 @@ Res5, Res4, Res3, Res2 are feature blocks derived from the original image encode
 Explanation for sequential steps of DETR Panoptic Segmentation Mask Head:
 Step 1: Input box embeddings into multi head attention module with M heads to calculate attention maps over encoded image. M attention maps are output for every object (over N objects) with the same encoded image feature resolution of H/32 x W/32
 Step 2: Attention maps obtained are parallely upsampled using a FPN style CNN to create mask logits for every object. This requires input of ResNet features as well.
-Step 3: FPN output contains mask logits for every object, on which pixelwise argmax operation can be perfomed to obtain the final panoptic segmented output.
+Step 3: Upsampling CNN output contains mask logits for every object, on which pixelwise argmax operation can be performed to obtain the final panoptic segmented output.
 
 ## Steps to Train DETR for Panoptic Segmentation
 1. Train DETR object detection model to detect and ouput bounding boxes for both things (objects) and stuff (background objects) categories.
